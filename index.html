@@ -4,10 +4,12 @@
 <head>
 	<!-- class="dark-mode" -->
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="./css/estilo.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="imagem/logo2.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Bruno San</title>
+
 </head>
 
 
@@ -16,42 +18,44 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<nav class="navbar navbar-expand-lg">
-						<a class="navbar-brand" href="#"><img class="logo" class="img-fluid" src="./imagem/logo.png" id="san"></a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-						</button>
-
-						<div class="collapse navbar-collapse" id="navbarSupportedContent">
-							<ul class="navbar-nav mr-auto">
-								<li class="nav-item active">
-									<a class="nav-link" href="#intro_page">Home <span class="sr-only"></span></a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#about-page">Sobre</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#experience_page">Experiência</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#">Formação</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#portifolio-page">Portifólio</a>
-								</li>
-							</ul>
-
-							<form class="form-inline my-2 my-lg-0">
-								<div>
-									<input type="checkbox" class="checkbox" id="chk">
-									<label class="label" for="chk">
-										<i class="fas fa-moon"></i>
-										<i class="fas fa-sun"></i>
-										<div class="ball"></div>
-									</label>
-								</div>
-							</form>
-
+					<nav class="navbar navbar-expand-lg ">
+						<div class="container-fluid">
+							<a class="navbar-brand" href="#"><img class="logo" class="img-fluid" src="imagem/logo.png"
+									id="san"></a>
+							<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+								data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+								aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarSupportedContent">
+								<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+									<li class="nav-item">
+										<a class="nav-link" aria-current="page" href="#">Home</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" aria-current="page" href="#about-page">Sobre</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" aria-current="page" href="#experience_page">Experiência</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" aria-current="page" href="#portifolio-page">Portifólio</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" aria-current="page" href="#contact-page">Contato</a>
+									</li>
+								</ul>
+								<form class="form-inline my-2 my-lg-0">
+									<div>
+										<input type="checkbox" class="checkbox" id="chk">
+										<label class="label" for="chk">
+											<i class="fas fa-moon"></i>
+											<i class="fas fa-sun"></i>
+											<div class="ball"></div>
+										</label>
+									</div>
+								</form>
+							</div>
 						</div>
 					</nav>
 				</div>
@@ -62,27 +66,22 @@
 	<div class="introsection" id="intro_page">
 		<div class="container">
 			<div class="row justify_content_center">
-				<div class="col-lg-6 order-sm-2 order-lg-1 my-auto ">
-					<div class="introtext">
-						<h2>OLÁ, EU SOU</h2>
-						<noscript>
-							<h1>BRUNO SANTOS </h1>
-						</noscript>
-						<h1><span class="auto-type"></span></h1>
-						<!--animacao texto digitado-->
-						<p>
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-							been the
-							industry's standard dummy text ever since. 
-						</p>
-						<a class="btn btn-outline-padrao" href="#" role="button">MEU TRABALHO</a>
-					</div>
-				</div>
-				<div class="col-lg-6 order-sm-1 order-lg-2 d-none d-sm-block">
+				<div class="col-lg-6 order-sm-1 order-lg-2">
 					<div class="modelo">
 						<img src="./imagem/bruno3.png" class="img-fluid" id="model">
 					</div>
 				</div>
+				<div class="col-lg-6 text-lg-start order-sm-2 text-center order-lg-1  my-auto ">
+					<div class="introtext ">
+						<h2>OLÁ, EU SOU</h2>
+						<h1><span class="auto-type"></span></h1>
+						<p>Meu objetivo é criar soluções simples e eficazes para problemas
+							reais enfrentados por mim ou pelas pessoas que convivo. </p>
+						<a class="btn btn-outline-padrao" href="#portifolio-page" role="button">MEU TRABALHO</a>
+					</div>
+
+				</div>
+
 			</div>
 		</div>
 	</div>
@@ -91,20 +90,19 @@
 		<div class="container">
 			<h1>SOBRE MIM</h1>
 			<div class="row justify_content_center">
-				<div class="col-lg-6">
-					<p class="recuo">Iniciei minha carreira como Auxiliar de Informática e atualmente trabalho
-						como Analista de Dados, na qual eu sou responsável por administrar o banco de
-						dados da empresa e transformar os dados desse banco em Dashboards (Excel
-						ou Power Bi).
-					</p>
-					<p class="recuo">Meu objetivo é ampliar cada vez mais meu conhecimento na área da informática
-						e utilizar esse conhecimento para criar soluções simples e eficazes para problemas
-						reais enfrentados por mim ou pelas pessoas que fazem parte do meu ciclo
-						social.
-					</p>
-					<a class="btn btn-outline-padrao" href="/Curriculo_Bruno_Santos.pdf" role="button" download>Download
-						Currículo
-					</a>
+				<div class="col-lg-6 text-lg-start text-center">
+					<div class="text-about">
+						<p class="recuo">Iniciei minha carreira como Auxiliar de Informática e atualmente trabalho
+							como Analista de Dados, na qual eu sou responsável por administrar o banco de
+							dados da empresa e transformar os dados desse banco em Dashboards (Excel
+							ou Power Bi).
+						</p>
+
+						<a class="btn btn-outline-padrao2" href="/Curriculo_Bruno_Santos.pdf" role="button"
+							download>Download
+							Currículo
+						</a>
+					</div>
 				</div>
 				<div class="col-lg-6">
 
@@ -133,22 +131,12 @@
 						<div class="skill">
 							<div class="skill-name">HTML & CSS / Bootstrap</div>
 							<div class="skill-bar">
-								<div class="skill-per" per="60%" style="max-width:60%"></div>
+								<div class="skill-per" per="70%" style="max-width:70%"></div>
 							</div>
 						</div>
 					</div>
 
-					<!-- java -->
-					<div class="skills">
-						<div class="skill">
-							<div class="skill-name">Java</div>
-							<div class="skill-bar">
-								<div class="skill-per" per="40%" style="max-width:40%"></div>
-							</div>
-						</div>
-					</div>
-
-					<!-- java -->
+					<!-- Adobe Photoshop -->
 					<div class="skills">
 						<div class="skill">
 							<div class="skill-name"> Adobe Photoshop</div>
@@ -194,16 +182,6 @@
 								</p>
 							</div>
 						</li>
-						<li class="timeline-item mb-5">
-							<div class="spaceTech">
-								<h5 class="fw-bold">FATEC l Monitor Algoritmo</h5>
-								<p class="text-date">Jul 2019 - Nov 2019</p>
-								<p class="text-detail">
-									-Aulas de linguagens de programação C++ e, principalmente,
-									Java.
-								</p>
-							</div>
-						</li>
 					</ul>
 				</div>
 
@@ -216,9 +194,8 @@
 								<h5 class="fw-bold">FATEC - SBC l Informática para Negócios </h5>
 								<p class="text-date">Ago 2019 - Mai 2020</p>
 								<p class="text-detail">
-									O objetivo é desenvolver sistemas de informação para a gestão
-									de negócios utilizando conhecimentos tecnológicos e científicos
-									que auxiliem no processo decisório das empresas.
+									Faculdade voltado para desenvolver sistemas de informação para a gestão
+									de negócios.
 								</p>
 							</div>
 						</li>
@@ -228,21 +205,8 @@
 								<h5 class="fw-bold">ETEC - SBC l Mecatrônica</h5>
 								<p class="text-date">Jan 2016 - Dez 2017</p>
 								<p class="text-detail">
-									O objetivo é formar o profissional que atua no projeto, na instalação
-									e na manutenção de máquinas e equipamentos automatizados
-									e sistemas robotizados.
-								</p>
-							</div>
-						</li>
-
-						<li class="timeline-item mb-5">
-							<div class="spaceTech">
-								<h5 class="fw-bold">SMABC l Desenho Técnico</h5>
-								<p class="text-date">Out 2016 - Dez 2016</p>
-								<p class="text-detail">
-									O objetivo é interpretar e fazer Desenhos Técnicos em 2D para
-									representação gráfica de plantas em projetos de arquitetura,
-									engenharia, design de interiores e de produto.
+									Curso Técnico para sistemas eletromecânicos automatizados,
+									controlados por computador.
 								</p>
 							</div>
 						</li>
@@ -257,47 +221,162 @@
 		<div class="container">
 			<h1>PORTIFÓLIO</h1>
 			<div class="row justify_content_center">
-				<div class="col-lg-12">
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-						the
-						industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-						type and
-						scrambled it to make a type specimen book. It has survived not only five centuries
+				<div class="col-lg-12 text-lg-start text-center">
+					<p class="recuo">Segue abaixo alguns dos meus projetos mais recentes de relatórios Dashboards no
+						Power Bi, que apresentam visões voltadas para análises de GC (Gerenciamento de Categoria) na
+						área de Trade Marketing.<br>
+
 					</p>
-					<iframe title="Modelo Exemplo-1" width="100%" height="600"
-						src="https://app.powerbi.com/reportEmbed?reportId=3150c7d6-8814-42ce-913d-665dd48a9d00&autoAuth=true&ctid=bc564569-bf24-4664-b190-51eb2d9236f6&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLWJyYXppbC1zb3V0aC1iLXByaW1hcnktcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D"
-						frameborder="0" allowFullScreen="true"></iframe>
+					<div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<iframe title="Modelo Exemplo-1 - Overview" width="100%" height="700"
+									src="https://app.powerbi.com/view?r=eyJrIjoiN2VkOTg0NjctNTUxZi00YTQzLWIyZDEtNTM4ZTRkY2FlNzNiIiwidCI6ImJjNTY0NTY5LWJmMjQtNDY2NC1iMTkwLTUxZWIyZDkyMzZmNiJ9"
+									frameborder="0" allowFullScreen="true"></iframe>
+
+							</div>
+							<div class="carousel-item">
+								<iframe title="Modelo dash 1 - Capa" width="100%" height="700"
+									src="https://app.powerbi.com/view?r=eyJrIjoiNThiNTZlN2UtNjg4MC00Y2UzLTg5NTUtNjgwOTJjMTU0MjM5IiwidCI6ImJjNTY0NTY5LWJmMjQtNDY2NC1iMTkwLTUxZWIyZDkyMzZmNiJ9"
+									frameborder="0" allowFullScreen="true"></iframe>
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button"
+							data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button"
+							data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+					<p class="obs">Os dados desses relatórios não são reais*<br>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-		crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-		crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
-		integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
-		crossorigin="anonymous"></script>
+
+	<div class="contact" id="contact-page">
+		<div class="container">
+			<div class="row justify_content_center">
+				<div class="col-lg-6">
+					<h1>ENTRAR EM CONTATO</h1>
+
+					<div class="info_contact">
+
+						<ul class="icon_contact">
+							<li> <i class="fa fa-phone"></i>
+								<h4 class="montserrat weight-regular no-margin capitalize">Phone</h4> <span><a
+										class="montserrat weight-regular" href="tel:+88 669 658 6586">+88 669 658
+										6586</a></span>
+							</li>
+
+							<li> <i class="fa fa-envelope"></i>
+								<h4 class="montserrat weight-regular no-margin capitalize">Email</h4> <span><a
+										class="montserrat weight-regular"
+										href="mailto:email@domain.com">email@domain.com</a></span>
+							</li>
+
+						</ul>
+					</div>
+
+					<div class="icon_rede">
+						<li>
+							<a href="https://www.linkedin.com/in/brunosantosm/"><i
+									class="fa-brands fa-linkedin"></i></a>
+						</li>
+
+						<li>
+							<a href="https://github.com/PrunoSan"><i class="fa-brands fa-github"></i></a>
+						</li>
+
+						<li>
+
+							<a href="https://www.instagram.com/prunosan/"><i class="fa-brands fa-instagram"></i></a>
+
+						</li>
+
+					</div>
 
 
+
+
+				</div>
+
+
+
+
+
+				<div class="col-lg-6">
+					<form id="contact-form">
+						<div class="row g-4">
+							<div class="col-6">
+
+								<label class="form-label" for="name"></label>
+								<input id="nome" name="nome" type="nome" class="form py-1" placeholder=" Seu Nome">
+
+							</div>
+
+							<div class="col-6">
+
+								<label class="form-label" for="email"></label>
+								<input id="email" name="email" type="email" class="form py-1" placeholder=" Seu E-mail">
+
+							</div>
+
+							<div class="col-12">
+
+
+								<textarea id="form-message" name="form-message" class="form-text py-1"
+									placeholder=" Como posso te ajudar?"></textarea>
+
+							</div>
+							<div class="col-12 text-center text-lg-start">
+
+								<a class="btn btn-outline-padrao" href="#portifolio-page" role="button">Enviar<span
+										class="ms-3"><i class="fas fa-arrow-right"></i></span></button></a>
+
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="final">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-12">
+					Copyright@2022 <span>BrunoSan</span> All Rights Reserved
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+		integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+		crossorigin="anonymous"></script>
 	<script src="script.js"></script>
 
 	<!-- icones -->
-	<script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 	<!-- efeito digitacao js -->
 	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
 	<script>
 		var typed = new Typed(".auto-type", {
-			strings: ["<span style='color: red'>BRUNO SANTOS M.</span>", "ANALISTA DE DADOS", "DEV FRONT-END", "FREELANCER", "BRUNO SANTOS M."],
+			strings: ["BRUNO SANTOS", "ANALISTA DE DADOS", "DEV FRONT-END", "FREELANCER", "BRUNO SANTOS"],
 			typeSpeed: 120,
 			backSpeed: 50,
 			loop: false
 		})
 	</script>
+
 
 </body>
 
