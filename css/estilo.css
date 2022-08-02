@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-padding-top: 4rem;
+  }
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 
@@ -170,6 +174,10 @@ a:hover {
 
 }
 
+.introsection .icon_rede {
+    margin: 10px 0px;
+
+}
 
 
 .modelo {
@@ -212,6 +220,7 @@ a:hover {
     font-size: 16px;
     padding: 10px;
     text-transform: uppercase;
+    
 }
 
 .btn-outline-padrao:hover {
@@ -550,7 +559,7 @@ textarea {
 
 
 
-.icon_rede {
+.contact .icon_rede {
     text-align: center;
 
 }
@@ -573,7 +582,7 @@ textarea {
 }
 
 .fa-github:hover {
-    color: rgb(0, 0, 0);
+    color: var(--icon-menu);
 }
 
 /* enviar */

@@ -29,3 +29,4 @@ function closeModal() {
     var element = document.getElementById("modal");
     element.classList.remove("show-modal");
 }
+
