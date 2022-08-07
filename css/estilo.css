@@ -280,6 +280,11 @@ a:hover {
     color: var(--corTexto2);
 }
 
+.carousel-item p{
+    text-align: center;
+    font-weight: bold;
+}
+
 
 /* skill progress */
 
@@ -575,14 +580,20 @@ textarea {
 
 .fa-instagram:hover {
     color: #e12c82;
+    transform: scale(1.2);
+    transition: transform 0.40s ease-in-out;
 }
 
 .fa-linkedin:hover {
     color: #0077b5;
+    transform: scale(1.2);
+    transition: transform 0.40s ease-in-out;
 }
 
 .fa-github:hover {
     color: var(--icon-menu);
+    transform: scale(1.2);
+    transition: transform 0.40s ease-in-out;
 }
 
 /* enviar */
