@@ -12,7 +12,21 @@ html {
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 
+.introsection ::selection , .experience ::selection, .headersection ::selection, .contact ::selection {
+    background: var(--corSelecao2);
+    color: var(--corTexto);
+}
+
+
+.about ::selection , .portfolio ::selection ,.final ::selection {
+    background: var(--corSelecao);
+    color: var(--corTexto);
+}
+
+
 :root {
+    --corSelecao:#eae6e1;
+    --corSelecao2:#1a1a1a;
     --corTitulo2: #837f7f;
     --corTitulo1: #414141;
     --corBarraRange: #e9ebe6;
@@ -33,6 +47,8 @@ html {
 }
 
 .dark-mode:root {
+    --corSelecao:#635e5e;
+    --corSelecao2:#635e5e;
     --corTitulo2: #bbb4b4;
     --corTitulo1: #ffffff;
     --corBarraRange: #e9ebe6;
@@ -72,7 +88,14 @@ body {
 
 .logo {
     height: 5vh;
+    margin-left: 20px ;
 }
+
+.modo {
+    height: 5vh;
+    margin-left: 50px ;
+}
+
 
 
 
@@ -127,27 +150,40 @@ a:hover {
     width: 100%;
     background-color: var(--corFundo);
     z-index: 2;
+    color: var(--corTexto);
 
 }
 
 .navbar {
     background-color: var(--corFundo);
-
-
-}
-
-.nav-item :link,
-:visited {
     color: var(--corTexto);
 }
 
-.nav-item :hover {
-    color: var(--corTitulo1);
-    font-weight: bolder;
+.nav-item{
+    margin: 0px 50px;
+    color: var(--corTexto);
 }
+
+.nav-item :link {   
+
+    color: var(--corTexto);
+}
+    
+
+
+    
+
+.nav-item :hover {   
+    transform: scale(1.1);
+    transition: transform 0.40s ease-in-out;
+    color: var(--corTexto);
+}
+    
+
 
 .fa-bars {
     color: var(--cor_icone_menu);
+    
 }
 
 
@@ -650,4 +686,5 @@ textarea {
 .Footer {
     position: static;
     bottom: 0;
+    
 }
