@@ -688,3 +688,11 @@ textarea {
     bottom: 0;
     
 }
+
+.contact input{
+    color: var(--corTexto);
+}
+
+.contact textarea{
+    color: var(--corTexto);
+}
